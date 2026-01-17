@@ -1,0 +1,10 @@
+[project]
+name = "eviction-early-warning"
+version = "0.1.0"
+description = "Early warning framework for eviction pressure (Pitt County NC + Bay County FL pilots)."
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
