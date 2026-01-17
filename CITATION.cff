@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Early Warning Framework for Eviction Pressure"
+message: "If you use this repository, please cite it."
+authors:
+  - family-names: "Gaskins"
+    given-names: "Barbara D."
+version: 1.0.0
+license: MIT
