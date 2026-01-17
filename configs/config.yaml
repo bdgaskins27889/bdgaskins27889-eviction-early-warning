@@ -1,0 +1,14 @@
+project:
+  name: eviction_early_warning
+  version: 1.0
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  figures: figures
+  reports: reports
+
+model:
+  w_filings: 0.7
+  w_permits: 0.3
+  lag_months: 3
