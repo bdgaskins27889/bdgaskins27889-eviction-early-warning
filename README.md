@@ -1,6 +1,20 @@
 [![Python CI](https://github.com/bdgaskins27889/bdgaskins27889-eviction-early-warning/actions/workflows/python-ci.yml/badge.svg)](https://github.com/bdgaskins27889/bdgaskins27889-eviction-early-warning/actions/workflows/python-ci.yml)
 # Early Warning Framework for Eviction Pressure
 
+## How to Run (Local)
+
+1. Clone the repository
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Launch Jupyter:
+   jupyter notebook
+
+4. Run the notebooks in order:
+   - notebooks/01_pitt_county_eviction_early_warning.ipynb
+   - notebooks/02_bay_county_disaster_segmentation.ipynb
+
+
 ## Overview
 This repository contains an applied data science project that develops and evaluates an interpretable early warning framework for identifying periods of elevated eviction pressure using publicly available data. The goal is proactive monitoring that supports housing stability efforts while maintaining ethical restraint and transparency.
 
