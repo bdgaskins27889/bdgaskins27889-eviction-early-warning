@@ -1,3 +1,4 @@
+[![Python CI](https://github.com/bdgaskins27889/bdgaskins27889-eviction-early-warning/actions/workflows/python-ci.yml/badge.svg)](https://github.com/bdgaskins27889/bdgaskins27889-eviction-early-warning/actions/workflows/python-ci.yml)
 # Early Warning Framework for Eviction Pressure
 
 ## Overview
