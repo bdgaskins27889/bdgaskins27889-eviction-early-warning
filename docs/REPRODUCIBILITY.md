@@ -13,3 +13,24 @@
 1. Download public datasets (Eviction Lab or court aggregate files)
 2. Place them in `data/raw/` locally (not tracked by git)
 3. Run notebooks or pipeline to generate outputs
+
+# Reproducibility Checklist
+
+## Environment
+- Python version:
+- OS tested:
+- Key libraries:
+
+## Data
+- Data sources are public and linked
+- No tenant-level or PII stored in repo
+- Data download steps documented
+
+## Pipeline
+- Monthly re-run supported (planned scheduling)
+- Outputs are generated deterministically where possible
+
+## Ethics
+- Aggregated data only
+- No individual risk scoring published
+- Clear disclaimer on limitations and intended use
