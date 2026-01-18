@@ -34,3 +34,17 @@
 - Aggregated data only
 - No individual risk scoring published
 - Clear disclaimer on limitations and intended use
+
+## What you need
+- Python 3.11+
+- `pip install -r requirements.txt`
+
+## Steps
+1. Place public datasets into `data/external/` (see `data/README.md`)
+2. Run `python scripts/run_monthly.py --county pitt`
+3. Run `python scripts/run_monthly.py --county bay --disaster`
+4. Open notebooks for analysis + visuals
+
+## Outputs
+- `data/processed/` contains feature tables
+- `reports/` contains generated figures and summaries
