@@ -1,14 +1,14 @@
 from __future__ import annotations
 import pandas as pd
-import numpy as np
 
+def minmax(series: pd.Series) -> pd.Series:
+    """Simple scaling helper used by the scoring framework."""
+    s = series.astype(float)
+    denom = (s.max() - s.min())
+    if denom == 0:
+        return pd.Series([0.0] * len(s), index=s.index)
+    return (s - s.min()) / denom
 
-def zscore(series: pd.Series, eps: float = 1e-9) -> pd.Series:
-    mu = series.mean()
-    sd = series.std(ddof=0)
-    if sd < eps:
-        return pd.Series(np.zeros(len(series)), index=series.index)
-    return (series - mu) / sd
 
 
 def rolling_zscore(series: pd.Series, window: int = 24, min_periods: int = 12) -> pd.Series:
