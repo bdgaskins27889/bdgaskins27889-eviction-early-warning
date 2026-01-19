@@ -1,9 +1,9 @@
 name: Monthly Pipeline
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 9 1 * *"  # 9:00 AM UTC on the 1st of each month
+# on:
+#   schedule:
+#     - cron: "0 0 1 * *"
+#   workflow_dispatch:
 
 jobs:
   run:
