@@ -1,0 +1,146 @@
+# Eviction Early Warning System (EEWS)
+
+**One‑liner:** A proactive, interpretable data science framework that helps communities detect **early eviction risk signals** so intervention can happen *before* families lose housing.
+
+---
+
+## Why This Exists
+
+Most eviction systems react *after* harm has already occurred—when notices are filed, court dates are set, and families are already in crisis. By then, options are limited and outcomes are costly for tenants, landlords, courts, and local governments.
+
+The **Eviction Early Warning System (EEWS)** flips that model. It is designed to surface **pressure signals upstream**—patterns in administrative and community‑level data that suggest rising housing instability—so stakeholders can respond with prevention, not punishment.
+
+This project is built with a **policy, public‑interest, and ethics‑first lens**: interpretability over black‑box accuracy, community‑level insight over individual targeting, and transparency over enforcement.
+
+---
+
+## What This System Does
+
+* **Inputs:** Aggregated housing, economic, and administrative indicators (e.g., filings trends, vacancy stress, cost burden proxies, temporal patterns)
+* **Outputs:** Community‑level risk scores, trend flags, and visual summaries
+* **Users:** Housing advocates, nonprofits, municipal agencies, researchers, and policy teams
+* **Purpose:** Prevention, monitoring, and resource planning
+
+> **Important:** This system is **not** designed to score or label individual tenants. No tenant‑level PII is used or stored.
+
+---
+
+## 60‑Second Demo
+
+```bash
+git clone https://github.com/bdgaskins27889/bdgaskins27889-eviction-early-warning.git
+cd bdgaskins27889-eviction-early-warning
+pip install -r requirements.txt
+jupyter notebook
+```
+
+Run:
+
+* `notebooks/pitt_county_pilot.ipynb`
+* `notebooks/bay_county_pilot.ipynb`
+
+**Produces:**
+
+* Cleaned feature tables
+* Risk trend visualizations
+* Interpretable model outputs
+
+---
+
+## Expected Outputs
+
+Even without running the code, reviewers should expect to see:
+
+* 📊 Time‑series charts showing rising or stabilizing eviction pressure
+* 🧮 Transparent model coefficients or feature importance
+* 🗺️ County‑level comparisons (no individual identifiers)
+* 📄 Summary tables suitable for briefs or dashboards
+
+These outputs are designed to be **decision‑ready**, not just statistically interesting.
+
+---
+
+## Methods (Plain English)
+
+The EEWS prioritizes **interpretability and robustness** over maximum predictive complexity.
+
+* Feature engineering focused on **temporal stress patterns**, not single events
+* Baseline statistical models and interpretable machine learning
+* Cross‑county pilot testing to evaluate generalizability
+
+This approach allows non‑technical stakeholders to understand *why* risk is rising—not just that it is.
+
+---
+
+## Data Sources
+
+Examples include:
+
+* Public court and eviction filing aggregates
+* Housing and economic indicators
+* Open government and census‑derived datasets
+
+> **Privacy Note:** This repository contains **no personally identifiable information (PII)**. Any examples are aggregated or synthetic. Instructions for accessing restricted datasets are intentionally excluded.
+
+---
+
+## Responsible Use & Ethics
+
+**Intended Use**
+
+* Early monitoring of housing instability
+* Resource allocation and prevention planning
+* Policy analysis and research
+
+**Not Intended For**
+
+* Individual tenant scoring
+* Automated enforcement or punitive action
+* Stand‑alone decision‑making without human review
+
+**Known Limitations**
+
+* Administrative data may lag real‑world conditions
+* Proxy variables can encode structural bias
+* Outputs should be paired with local context and lived experience
+
+Ethical guardrails are treated as **core system requirements**, not afterthoughts.
+
+---
+
+## Reproducibility
+
+* Python version specified in `requirements.txt`
+* Deterministic preprocessing steps
+* Modular pipeline structure (`src/`, `configs/`, `tests/`)
+* Continuous integration configured via GitHub Actions
+
+---
+
+## Current Status
+
+**Version:** v0.1 — Pilot Phase Complete
+
+Pilots conducted using county‑level data in:
+
+* Pitt County, North Carolina
+* Bay County, Florida
+
+---
+
+## Roadmap
+
+* [ ] Expand pilot counties
+* [ ] Add dashboard‑ready outputs
+* [ ] Formal bias and sensitivity analysis
+* [ ] Practitioner‑focused policy brief
+
+---
+
+## Citation
+
+If you use or adapt this work, please cite via `CITATION.cff` included in the repository.
+
+---
+
+*Prevention works best when pressure is visible early. This system is about seeing it—and acting responsibly.*
