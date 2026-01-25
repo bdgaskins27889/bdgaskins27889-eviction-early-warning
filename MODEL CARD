@@ -1,0 +1,40 @@
+# Model Card — Eviction Early Warning System (EEWS)
+
+## Model Overview
+
+**Name:** Eviction Early Warning System (EEWS)
+**Type:** Interpretable statistical / machine‑learning framework
+**Primary Goal:** Identify *early eviction pressure signals* at the **community level** to support prevention and resource planning.
+
+This model is designed as a **decision‑support tool**, not an automated decision maker.
+
+---
+
+## Intended Use
+
+EEWS is intended to be used for:
+
+* Monitoring **community‑level eviction pressure trends**
+* Informing **prevention, outreach, and legal aid prioritization**
+* Supporting **policy analysis, grant reporting, and program evaluation**
+
+The model is appropriate for:
+
+* Housing stability nonprofits
+* Legal aid organizations
+* Local and state agencies
+* Civic data teams
+* Researchers studying housing insecurity
+
+---
+
+## Out‑of‑Scope Use (Prohibited)
+
+EEWS **must not** be used for:
+
+* Individual tenant risk scoring
+* Predicting individual household behavior
+* Enforcement actions or punitive decision‑making
+* Fully automated decisions without human review
+
+The model does **not** determine who will be evicted. It highlights **where p
